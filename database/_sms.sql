@@ -331,7 +331,6 @@ CREATE TABLE `students` (
   `address` varchar(200) NOT NULL,
   `city` varchar(50) NOT NULL,
   `zip` varchar(20) NOT NULL,
-  `state` varchar(50) NOT NULL,
   `request_date` varchar(30) NOT NULL,
   `request_time` varchar(30) NOT NULL,
   `request` varchar(20) NOT NULL

@@ -11,8 +11,8 @@
                 <strong>Do you really want to Edit Teacher Details?</strong>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-danger" id="confirm-edit-btn">Edit</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-danger" id="confirm-edit-btn">Editar</button>
             </div>
         </div>
     </div>

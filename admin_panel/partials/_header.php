@@ -11,7 +11,7 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
     <title>Gimnasio Obregón</title>
-    <link rel="icon" type="image/x-icon" href="../images/1.png">
+    <link rel="icon" type="image/x-icon" href="../images/1-0.png">
     
     <link rel="stylesheet" href="css/bootstrap.css">
 

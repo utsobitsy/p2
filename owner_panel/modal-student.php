@@ -44,8 +44,8 @@ error_reporting(0);
 <body>
 	<div class="header">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="index.php">SCHOOL MANAGEMENT</a>
+        <div class="container-fluid">
+    <a class="navbar-brand" href="index.php">Gimnasio Obregón</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -56,17 +56,6 @@ error_reporting(0);
         </li>
         <li class="nav-item">
           <a class="nav-link" href="notices.php">Notice</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Fee Pay
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="make-payment.php">Make Payment</a></li>
-            <li><a class="dropdown-item" href="see-payment.php">See Payment</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="change-password.php">Change-Password</a>
@@ -81,6 +70,7 @@ error_reporting(0);
               data-lang-root-style="code-flag"
               data-lang-list-style="code-flag"
               ></div>
+
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-success" type="submit">Search</button>
       </form>
@@ -112,10 +102,8 @@ error_reporting(0);
                         <li class='list-group-item px-4'>D-O-B: ".$row['dob']."</li>
                         <li class='list-group-item px-4'>Address: ".$row['address']."</li>
                         <li class='list-group-item px-4'>city: ".$row['city']."</li>
-                        <li class='list-group-item px-4'>state: ".$row['state']."</li>
                     </ul>
                     <div class='card-body'>
-                        <a href='student-attendence.php?id=". $row['id'] ."' class='card-link'><button id='fee' data-id='".$row['id']."' style='height: 35px; width: 100px; background-color: green; color: white; border: none; border-radius: 8px; text-decoration: none;'>Fee Status</button></a>
                         
                         <a href='student-attendence.php?id=". $row['id'] ."' class='card-link'><button id='attendence' data-id='".$row['id']."' style='height: 35px; width: 100px; background-color: #4f4446; color: white; border: none; border-radius: 8px; text-decoration: none;'>Attendence</button></a>
                     </div>

@@ -11,7 +11,7 @@
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalLabel">Add Reminder</h1>
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Agregar recordatorio</h1>
                 <button type="button" class="close mr-2" data-bs-dismiss="modal" aria-label="Close"><i
                         class='bx bx-x'></i></button>
             </div>
@@ -19,7 +19,7 @@
 
                 <div class="container mr-3 ml-3">
                     <div class="alert alert-warning reminder-error" role="alert" style="min-height: 50px;display: none;">
-                    Message can't be empty!
+                    El mensaje no puede estar vacio!
                     </div>
                     <div class="mb-3">
                         <!-- <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label> -->
@@ -46,10 +46,10 @@
     <main>
         <div class="header">
             <div class="left">
-                <h1>Dashboard</h1>
+                <h1>Panel principal</h1>
                 <ul class="breadcrumb">
                     <li><a>
-                            Analytics
+                        Estadisticas
                         </a></li>
 
                 </ul>
@@ -74,21 +74,21 @@
                 <i class='bx bxs-group'></i>
                 <span class="info">
                     <h3  class="text-center" id="studentCount">_ _ _</h3>
-                    <p>Students</p>
+                    <p>Estudiantes</p>
                 </span>
             </li>
             <li onclick="showNotesList()">
                 <i class='bx bx-book'></i>
                 <span class="info">
                     <h3 class="text-center"  id="classCount">_ _ _</h3>
-                    <p>Notes</p>
+                    <p>Notas</p>
                 </span>
             </li>
             <li onclick="showNoticeList()">
                 <i class='bx bxs-bookmark'></i>
                 <span class="info">
                     <h3 class="text-center"  id="noticeCount">_ _ _</h3>
-                    <p>Notices</p>
+                    <p>Noticias</p>
                 </span>
             </li>
         </ul>
@@ -98,7 +98,7 @@
             <div class="orders">
                 <div class="header">
                     <i class='bx bx-receipt'></i>
-                    <h3 id="text-heading">Latest Notices</h3>
+                    <h3 id="text-heading">Ultimas noticias</h3>
                     <i class='bx bx-filter'></i>
                     <a href="noticeboard.php" > <i class='bx bx-plus icon-hover-circle' id="plusIconNotification" style="font-size: 30px;"></i></a>
                 </div>
@@ -108,9 +108,9 @@
                 <table>
                     <thead>
                         <tr>
-                            <th>Title</th>
-                            <th>Date</th>
-                            <th>Sender</th>
+                            <th>Titulo</th>
+                            <th>Fecha</th>
+                            <th>Remitente</th>
                         </tr>
                     </thead>
                     <tbody id="noticeTableBody">
@@ -123,7 +123,7 @@
             <div class="reminders">
                 <div class="header">
                     <i class='bx bx-note'></i>
-                    <h3>Remiders</h3>
+                    <h3>Recordatorios</h3>
                     <!-- <i class='bx bx-filter'></i> -->
                     <a data-bs-toggle="modal" data-bs-target="#reminder-modal"> <i style="font-size: 30px;" class='bx bx-plus icon-hover-circle'></i></a>
                 </div>

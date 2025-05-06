@@ -24,7 +24,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $address = $dataObject["address"];
     $city = $dataObject["city"];
     $zip = $dataObject["zip"];
-    $state = $dataObject["state"];
     $guardian = $dataObject["guardian"];
     $gphone = $dataObject["gphone"];
     $gaddress = $dataObject["gaddress"];

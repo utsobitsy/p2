@@ -243,22 +243,6 @@
                             </div>
                         </div>
 
-
-                        <div class="mb-3">
-                            <label for="state" class="form-label">State</label>
-                            <select class="form-select" aria-label="Default select example" id="state" name="state"
-                                required>
-                                <option selected disabled value="">--select--</option>
-                                <option value="Hariyana">Hariyana</option>
-                                <option value="UP">UP</option>
-                                <option value="Delhi">Delhi</option>
-                                <option value="Panjab">Panjab</option>
-                                <option value="Gujrat">Gujrat</option>
-                            </select>
-                            <div class="invalid-feedback">
-                                required!
-                            </div>
-                        </div>
                     </div>
                 </div>
                 <div class="modal-footer">

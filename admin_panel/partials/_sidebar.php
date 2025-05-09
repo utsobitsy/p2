@@ -3,7 +3,7 @@
     <a href="dashboard.php" class="logo">
         <!-- <i class='bx bx-book-bookmark'></i> -->
         <img src="../images/1-0.png">
-          <div class="logo-name"><span class="text-warning">G</span><span class="darkTextColor">B</span><span class="text-warning">O</span></div>
+          <div class="logo-name"><span class="darkTextColor">G</span><span class="darkTextColor">B</span><span class="darkTextColor">O</span></div>
     </a>
     
       <ul class="side-menu-opener">

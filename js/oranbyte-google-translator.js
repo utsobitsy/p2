@@ -1,6 +1,6 @@
 
-const DEFAULT_LANGUAGE = 'en';
-const LANGUAGES = ['en', 'es', 'fr', 'it'];
+const DEFAULT_LANGUAGE = 'es';
+const LANGUAGES = ['en', 'es'];
 const LANGUAGE_STYLES = ['code', 'text', 'flag', 'code-flag', 'text-flag'];
 const ORANBYTE_GOOGLE_TRANSLATOR_ID = 'oranbyte-google-translator';
 

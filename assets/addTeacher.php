@@ -43,9 +43,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else {
 
         // Use prepared statements for inserting teacher details
-        $addTeacherDetailQuery = "INSERT INTO `teachers` (`s_no`, `id`, `fname`, `lname`, `class`,`section`, `subject`, `gender`, `dob`, `phone`, `email`, `address`, `city`, `zip`, `state`) VALUES (NULL, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+        $addTeacherDetailQuery = "INSERT INTO `teachers` (`s_no`, `id`, `fname`, `lname`, `class`,`section`, `subject`, `gender`, `dob`, `phone`, `email`, `address`, `city`, `zip`) VALUES (NULL, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
         $stmt = mysqli_prepare($conn, $addTeacherDetailQuery);
-        mysqli_stmt_bind_param($stmt, "ssssssssssssss", $uniqueId, $fname, $lname, $_class , $_section, $subject, $gender, $dob, $phone, $email, $address, $city, $zip, $state);
+        mysqli_stmt_bind_param($stmt, "ssssssssssssss", $uniqueId, $fname, $lname, $_class , $_section, $subject, $gender, $dob, $phone, $email, $address, $city, $zip);
         mysqli_stmt_execute($stmt);
 
         // Use prepared statements for inserting guardian details

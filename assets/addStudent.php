@@ -72,10 +72,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
 
         if (!$invalidFormat) {
-            $addStudentDetailQuery = "INSERT INTO `students` (`s_no`, `id`, `fname`, `lname`, `father`, `gender`, `class`, `section`, `dob`, `image`, `phone`, `email`, `address`, `city`, `zip`) VALUES (NULL, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+            $addStudentDetailQuery = "INSERT INTO `students` (`s_no`, `id`, `fname`, `lname`, `father`, `gender`, `class`, `section`, `dob`, `image`, `phone`, `email`, `address`, `city`, `zip`) VALUES (NULL, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 
             $stmt = mysqli_prepare($conn, $addStudentDetailQuery);
-            mysqli_stmt_bind_param($stmt, "sssssssssssssss", $uniqueId, $fname, $lname, $father, $gender, $class, $section, $dob, $imageName, $phone, $email, $address, $city, $zip);
+            mysqli_stmt_bind_param($stmt, "ssssssssssssss", $uniqueId, $fname, $lname, $father, $gender, $class, $section, $dob, $imageName, $phone, $email, $address, $city, $zip);
             mysqli_stmt_execute($stmt);
 
             $addGuardianDetailQuery = "INSERT INTO `student_guardian` (`s_no`, `id`, `gname`, `gphone`, `gaddress`, `gcity`, `gzip`, `relation`) VALUES (NULL, ?, ?, ?, ?, ?, ?, ?)";

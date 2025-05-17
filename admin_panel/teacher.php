@@ -8,7 +8,7 @@
             <div class="modal-header">
             </div>
             <div class="modal-body">
-                <strong>Do you really want to Edit Teacher Details?</strong>
+                <strong>Quieres editar los detalles del profesor?</strong>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
@@ -27,17 +27,17 @@
             <div class="modal-header">
             </div>
             <div class="modal-body">
-                <strong>Do you really want to delete Teacher?</strong>
+                <strong>Quieres eliminar al profesor?</strong>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-danger" onclick="deleteTeacherWithIdSeted()">Delete</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-danger" onclick="deleteTeacherWithIdSeted()">Eliminar</button>
             </div>
         </div>
     </div>
 </div>
 <!-- end of alert to delete teacher -->
-<!--add new student model -->
+<!--add new teacher model -->
 
 
 <div class="modal" style="z-index: 2000;" id="addTeacherModal" tabindex="-1" aria-labelledby="exampleModalLabel"
@@ -45,7 +45,7 @@
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalLabel">Teacher Details</h1>
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Detalles del Profesor</h1>
                 <button type="button" class="close mr-2" data-bs-dismiss="modal" aria-label="Close"><i
                         class='bx bx-x'></i></button>
             </div>
@@ -53,20 +53,20 @@
                 <div class="modal-body">
                     <div class="container my-3">
                         <div class="mb-3">
-                            <label for="fullname" class="form-label">Full Name</label>
+                            <label for="fullname" class="form-label">Nombre Completo</label>
                             <div class="row">
                                 <div class="col">
-                                    <input type="text" class="form-control" placeholder="First name"
+                                    <input type="text" class="form-control" placeholder="Nombre/s"
                                         aria-label="First name" id="fname" name="fname" required>
                                     <div class="invalid-feedback">
-                                        required!
+                                        requerido!
                                     </div>
                                 </div>
                                 <div class="col">
-                                    <input type="text" class="form-control" placeholder="Last name"
+                                    <input type="text" class="form-control" placeholder="Apellido/s"
                                         aria-label="Last name" id="lname" name="lname" required>
                                     <div class="invalid-feedback">
-                                        required!
+                                        requerido!
                                     </div>
                                 </div>
                             </div>
@@ -75,13 +75,13 @@
 
 
                         <div class="mb-3">
-                        <label for="details" class="form-label">Class Teacher Details</label>
+                        <label for="details" class="form-label">Detalles de la clase del profesor</label>
                         <div class="row">
                                 <div class="col">
                                 <select class="form-select" id="class" name="class" style="width:100%;" required>
 
-                                    <option selected disabled value="">---select--</option>
-                                    <option value="null">Not Applicable</option>
+                                    <option selected disabled value="">---seleccionar--</option>
+                                    <option value="null">No Aplicable</option>
                                     <!-- <option value="12s">12 (Math)</option>
                                     <option value="12s">12 (Bio)</option>
                                     <option value="12c">12 (Commerce)</option>
@@ -104,57 +104,57 @@
                                     <?php include('partials/select_classes.php') ?>
                                     </select>
                                     <div class="invalid-feedback">
-                                    required!
+                                    requerido!
                                     </div>
                                 </div>
                                 <div class="col">
                                 <select class="form-select" id="section" name="section" style="width:100%;"
                                         required>
-                                        <option selected disabled value="">--select--</option>
+                                        <option selected disabled value="">--seleccionar--</option>
                                         <!-- <option value="A">A</option>
                                         <option value="B">B</option>
                                         <option value="C">C</option> -->
-                                        <option value="null">Not Applicable</option>
+                                        <option value="null">No Aplicable</option>
                                         <?php include('partials/selelct_section.php') ?>
                                     </select>
                                     <div class="invalid-feedback">
-                                        required!
+                                        requerido!
                                     </div>
                                 </div>
                             </div>
                             <div class="invalid-feedback" id="invaldClassteacher">
-                                        Either both are not applicable or both are selected!!
+                                        Ambos no son aplicable o ambos están seleccionados!!
                                     </div>
                         </div>
 
                         <div class="mb-3">
-                            <label for="subject" class="form-label">Related Subject</label>
+                            <label for="subject" class="form-label">Materia</label>
                             <input type="text" class="form-control" id="subject" aria-describedby="emailHelp"
                                 name="subject" required>
                             <div class="invalid-feedback">
-                                required!
+                                requerido!
                             </div>
                         </div>
 
                         <div class="mb-3">
-                            <label for="gender" class="form-label">Gender</label>
+                            <label for="gender" class="form-label">Género</label>
                             <select class="form-select" id="gender" name="gender" required>
-                                <option selected disabled value="">--select--</option>
-                                <option value="Male">Male</option>
-                                <option value="Female">Female</option>
-                                <option value="Other">Other</option>
+                                <option selected disabled value="">--seleccionar--</option>
+                                <option value="Male">Hombre</option>
+                                <option value="Female">Mujer</option>
+                                <option value="Other">Otro</option>
                             </select>
                             <div class="invalid-feedback">
-                                required!
+                                requerido!
                             </div>
                         </div>
 
                         <div class="mb-3">
-                            <label for="dob" class="form-label">Date of Birth</label>
+                            <label for="dob" class="form-label">Fecha de nacimiento</label>
                             <input type="date" class="form-control" id="dob" aria-describedby="emailHelp" name="dob"
                                 required>
                             <div class="invalid-feedback">
-                                required!
+                                requerido!
                             </div>
                         </div>
                     </div>
@@ -162,7 +162,7 @@
                 <div class="modal-footer">
 
                     <button type="button" class="btn btn-primary" id="general-info-btn">
-                        <div><i class='bx bxs-chevrons-right'></i><span> next</span></div>
+                        <div><i class='bx bxs-chevrons-right'></i><span> siguiente</span></div>
                     </button>
                 </div>
             </form>
@@ -177,7 +177,7 @@
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalLabel">Address Details</h1>
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Detalles de dirección</h1>
                 <button type="button" class="close mr-2" data-bs-dismiss="modal" aria-label="Close"><i
                         class='bx bx-x'></i></button>
             </div>
@@ -186,15 +186,15 @@
                     <div class="container my-3">
 
                         <div class="mb-3">
-                            <label for="phone" class="form-label">Phone number</label>
+                            <label for="phone" class="form-label">Número de telefono</label>
                             <input type="tel" class="form-control" id="phone" name="phone"
-                                placeholder="Enter phone number" required>
+                                placeholder="Ingresa numero de telefono" required>
                             <div class="valid-feedback">
                                 <!-- Bootstrap "check" icon for valid input -->
                                 <!-- <i class="bi bi-check text-success"></i> -->
                             </div>
                             <div class="invalid-feedback" id="phone-mdg">
-                                Please enter a valid 10-digit phone number.
+                                Porfavor ingresa un número de 10 digitos valido.
                             </div>
                         </div>
 
@@ -203,64 +203,48 @@
                             <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
                                 name="email" required>
                             <div class="invalid-feedback">
-                                required!
+                                requerido!
                             </div>
                         </div>
 
                         <div class="mb-3">
-                            <label for="address" class="form-label">Address</label>
+                            <label for="address" class="form-label">Dirección</label>
                             <input type="text" class="form-control" id="address" aria-describedby="emailHelp"
                                 name="address" required>
                             <div class="invalid-feedback">
-                                required!
+                                requerido!
                             </div>
                         </div>
 
 
                         <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">City</label>
+                            <label for="exampleInputEmail1" class="form-label">Ciudad</label>
                             <div class="row">
                                 <div class="col">
-                                    <input type="text" class="form-control" id="city" placeholder="City name"
+                                    <input type="text" class="form-control" id="city" placeholder="Nombre de ciudad"
                                         aria-label="First name" name="city" required>
                                     <div class="invalid-feedback">
-                                        required!
+                                        requerido!
                                     </div>
                                 </div>
                                 <div class="col">
-                                    <input type="text" class="form-control" id="zip" placeholder="Zip code"
+                                    <input type="text" class="form-control" id="zip" placeholder="Código postal"
                                         aria-label="Last name" name="zip" required>
                                     <div class="invalid-feedback">
-                                        required!
+                                        requerido!
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-
-                        <div class="mb-3">
-                            <label for="state" class="form-label">State</label>
-                            <select class="form-select" aria-label="Default select example" id="state" name="state"
-                                required>
-                                <option selected disabled value="">--select--</option>
-                                <option value="Hariyana">Hariyana</option>
-                                <option value="UP">UP</option>
-                                <option value="Delhi">Delhi</option>
-                                <option value="Panjab">Panjab</option>
-                                <option value="Gujrat">Gujrat</option>
-                            </select>
-                            <div class="invalid-feedback">
-                                required!
-                            </div>
-                        </div>
                     </div>
                 </div>
                 <div class="modal-footer">
                    <button type="button" onclick="backToStudentDetail()" class="btn btn-secondary">
-                        <div><i class='bx bxs-chevrons-left'></i><span>Back</span></div>
+                        <div><i class='bx bxs-chevrons-left'></i><span>Atrás</span></div>
                     </button>
                     <button type="button" class="btn btn-primary" id="personal-info-btn">
-                        <div><i class='bx bxs-chevrons-right'></i><span> next</span></div>
+                        <div><i class='bx bxs-chevrons-right'></i><span> siguiente</span></div>
                     </button>
                 </div>
             </form>
@@ -275,7 +259,7 @@
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalLabel">Emergency Contact Details</h1>
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Detalles de contacto de emergencia</h1>
                 <button type="button" class="close mr-2" data-bs-dismiss="modal" aria-label="Close"><i
                         class='bx bx-x'></i></button>
             </div>
@@ -284,49 +268,49 @@
 
                     <div class="container my-3">
                         <div class="mb-3">
-                            <label for="guardian" class="form-label">Guardian name</label>
+                            <label for="guardian" class="form-label">Nombre de acudiente</label>
                             <input type="text" class="form-control" id="guardian" aria-describedby="emailHelp"
                                 name="guardian" required>
                             <div class="invalid-feedback">
-                                required!
+                                requerido!
                             </div>
                         </div>
 
                         <div class="mb-3">
-                            <label for="gphone" class="form-label">Phone number</label>
+                            <label for="gphone" class="form-label">Número de telefono</label>
                             <input type="tel" class="form-control" id="gphone" name="gphone"
-                                placeholder="Enter phone number" required>
+                                placeholder="Ingresa numero de telefono" required>
                             <div class="valid-feedback">
                             </div>
                             <div class="invalid-feedback" id="phone-g">
-                                Please enter a valid 10-digit phone number.
+                                Porfavor ingresa un número de 10 digitos valido.
                             </div>
                         </div>
 
                         <div class="mb-3">
-                            <label for="gaddress" class="form-label">Address</label>
+                            <label for="gaddress" class="form-label">Dirección</label>
                             <input type="text" class="form-control" id="gaddress" aria-describedby="emailHelp"
                                 name="gaddress" required>
                             <div class="invalid-feedback">
-                                required!
+                                requerido!
                             </div>
                         </div>
 
                         <div class="mb-3">
-                            <label for="city-info" class="form-label">City</label>
+                            <label for="city-info" class="form-label">Ciudad</label>
                             <div class="row">
                                 <div class="col">
-                                    <input type="text" class="form-control" placeholder="City name"
+                                    <input type="text" class="form-control" placeholder="Nombre de ciudad"
                                         aria-label="First name" id="gcity" name="gcity" required>
                                     <div class="invalid-feedback">
-                                        required!
+                                        requerido!
                                     </div>
                                 </div>
                                 <div class="col">
-                                    <input type="text" class="form-control" placeholder="Zip code"
+                                    <input type="text" class="form-control" placeholder="Código postal"
                                         aria-label="Last name" id="gzip" name="gzip" requireds>
                                     <div class="invalid-feedback">
-                                        required!
+                                        requerido!
                                     </div>
                                 </div>
                             </div>
@@ -334,20 +318,20 @@
 
 
                         <div class="mb-3">
-                            <label for="relation" class="form-label">Relation to teacher</label>
+                            <label for="relation" class="form-label">Relación con el profesor</label>
                             <input type="text" class="form-control" id="relation" aria-describedby="emailHelp"
                                 name="relation" required>
                             <div class="invalid-feedback">
-                                required!
+                                requerido!
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="modal-footer">
                    <button type="button" class="btn btn-secondary" onclick="backToAddressDetail()">
-                        <div><i class='bx bxs-chevrons-left'></i><span>Back</span></div>
+                        <div><i class='bx bxs-chevrons-left'></i><span>Atrás</span></div>
                     </button>
-                    <button type="button" class="btn btn-primary" id="guardian-form-btn"><span>Submit </span></button>
+                    <button type="button" class="btn btn-primary" id="guardian-form-btn"><span>Enviar </span></button>
                 </div>
             </form>
         </div>
@@ -358,13 +342,13 @@
 
 <!-- end of add new student model -->
 
-<!-- Remove student model -->
+<!-- Remove teacher model -->
 <div class="modal removeTeacherModal" style="z-index: 2000;" id="removeStudentModel" tabindex="-1"
     aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-header">
-                <h1 class="modal-title text-danger fs-5" id="exampleModalLabel">Delete Teacher</h1>
+                <h1 class="modal-title text-danger fs-5" id="exampleModalLabel">Eliminar profesor</h1>
                 <button type="button" class="close mr-2" data-bs-dismiss="modal" aria-label="Close"><i
                         class='bx bx-x'></i></button>
             </div>
@@ -373,10 +357,10 @@
                     <div class="container my-3">
 
                         <div class="mb-3">
-                            <label for="teacher-id" class="form-label">Teacher ID</label>
+                            <label for="teacher-id" class="form-label">ID del profesor</label>
                             <input type="text" class="form-control" id="teacher-id" aria-describedby="" required>
                             <div class="invalid-feedback">
-                                Please provide a valid Teacher ID.
+                                Porfavor proporciona un ID de profesor válido.
                             </div>
                         </div>
 
@@ -386,7 +370,7 @@
                 <div class="modal-footer">
 
                     <button type="button" class="btn btn-danger" id="remove-teacher-btn">
-                        <div><span>Delete Teacher</span></div>
+                        <div><span>Eliminar profesor</span></div>
                     </button>
                 </div>
             </form>
@@ -411,7 +395,7 @@
     <main>
         <div class="header">
             <div class="left">
-                <h1>Teacher</h1>
+                <h1>Profesor</h1>
 
             </div>
 
@@ -424,20 +408,20 @@
                 <ul class="nav nav-tabs" id="myTab" role="tablist">
                     <li class="nav-item me-1" role="presentation">
                         <button class="nav-link active " id="addTeacherTab" data-bs-toggle="tab" data-bs-target="#home"
-                            type="button" role="tab" aria-controls="home" aria-selected="true">Add Teacher</button>
+                            type="button" role="tab" aria-controls="home" aria-selected="true">Agregar profesor</button>
                     </li>
                     <li class="nav-item me-1" role="presentation">
                         <button class="nav-link" id="showTeacherTab" data-bs-toggle="tab" data-bs-target="#profile"
                             type="button" role="tab" aria-controls="profile" aria-selected="false"
-                            onclick="showTeachers()">Show
-                            Teachers</button>
+                            onclick="showTeachers()">Mostrar
+                            Profesores</button>
                     </li>
                     
                     
                     <li class="nav-item me-1" role="presentation">
                         <button class="nav-link" id="show-leave-tab" data-bs-toggle="tab" data-bs-target="#leave-tab"
                             type="button" role="tab" aria-controls="leave-tab" aria-selected="false"
-                          >Teachers Leave</button>
+                          >Salida de profesores</button>
                     </li>
 
                 </ul>
@@ -450,7 +434,7 @@
                         <div class="attendenceTable" style="display: block;">
                             <div class="header">
                                 <i class='bx bx-receipt'></i>
-                                <h3>Teachers</h3>
+                                <h3>Profesores</h3>
                                 <div class="student-btns">
                                     <div class="student-btns">
 
@@ -462,11 +446,11 @@
 
                                             <ul class="dropdown-menu">
                                                 <li><a class="dropdown-item reset-attendence" id="add_student_dropdown"
-                                                        data-bs-toggle="modal" data-bs-target="#addTeacherModal">Add
-                                                        Teacher</a></li>
+                                                        data-bs-toggle="modal" data-bs-target="#addTeacherModal">
+                                                        Agregar profesores</a></li>
                                                 <li><a class="dropdown-item submit-attendence"
                                                         id="remove_student_dropdown" data-bs-toggle="modal"
-                                                        data-bs-target="#removeStudentModel">Remove Teacher</a></li>
+                                                        data-bs-target="#removeStudentModel">Eliminar profesores</a></li>
                                             </ul>
                                         </div>
 
@@ -485,9 +469,9 @@
                                             <i class='bx bxs-user-plus'></i>
                                             <span class="info">
                                                 <h3>
-                                                    Add
+                                                    Agregar
                                                 </h3>
-                                                <h3>Teacher</h3>
+                                                <h3>Profesor</h3>
                                             </span>
                                         </li>
                                     </a>
@@ -504,9 +488,9 @@
                                             <i class='bx bxs-user-minus'></i>
                                             <span class="info">
                                                 <h3>
-                                                    Remove
+                                                    Eliminar
                                                 </h3>
-                                                <h3>Teacher</h3>
+                                                <h3>Profesor</h3>
                                             </span>
                                         </li>
                                     </a>
@@ -530,7 +514,7 @@
                                 <div class="attendenceTable" style="display: block;">
                                     <div class="header">
                                         <i class='bx bx-list-ul'></i>
-                                        <h3>Teacher List</h3>
+                                        <h3>Lista de profesores</h3>
 
                                         <!-- <a href="#" class="excel">
                                             <i class="fa fa-file-excel-o" aria-hidden="true"></i>
@@ -556,9 +540,9 @@
                                             <thead>
                                                 <tr>
                                                     <th scope="col" class="thead col-2">#</th>
-                                                    <th scope="col" class="thead col-2">Teacher ID</th>
-                                                    <th scope="col" class="thead col-5">Name</th>
-                                                    <th scope="col" class="thead col-3">Action</th>
+                                                    <th scope="col" class="thead col-2">ID del profesor</th>
+                                                    <th scope="col" class="thead col-5">Nombre</th>
+                                                    <th scope="col" class="thead col-3">Acción</th>
                                                 </tr>
                                             </thead>
 
@@ -576,7 +560,7 @@
                                                 <div class="no-dataicon">
                                                     <i class='bx bx-data'></i>
                                                 </div>
-                                                <p>No Data</p>
+                                                <p>No hay datos</p>
                                             </div>
                                         </div>
 

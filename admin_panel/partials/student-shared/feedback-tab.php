@@ -47,7 +47,6 @@
                 <select class="form-select" aria-label="Default select example" id="feedback-search-section">
                     <option selected>A</option>
                     <option>B</option>
-                    <option>C</option>
                 </select>
             </div>
         </div>

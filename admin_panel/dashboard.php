@@ -49,7 +49,7 @@
                 <h1>Panel principal</h1>
                 <ul class="breadcrumb">
                     <li><a>
-                        Estadisticas
+                        Estadísticas
                         </a></li>
 
                 </ul>
@@ -67,7 +67,7 @@
                 <i class='bx bxs-user'></i>
                 <span class="info">
                     <h3 class="text-center" id="teacherCount">_ _ _</h3>
-                    <p>Teachers</p>
+                    <p>Profesores</p>
                 </span>
             </li>
             <li onclick="showStudentList()">

@@ -331,6 +331,7 @@ CREATE TABLE `students` (
   `address` varchar(200) NOT NULL,
   `city` varchar(50) NOT NULL,
   `zip` varchar(20) NOT NULL,
+  `state` varchar(50) NOT NULL,
   `request_date` varchar(30) NOT NULL,
   `request_time` varchar(30) NOT NULL,
   `request` varchar(20) NOT NULL
@@ -385,9 +386,8 @@ CREATE TABLE `subjects` (
 --
 
 INSERT INTO `subjects` (`s_no`, `subject_id`, `subject_name`, `class`) VALUES
-(1, '12c6672ac911a253', 'Hindi', '12c'),
-(2, '12c6672ac9c45d68', 'Commerce', '12c'),
-(3, '12c6672aca78c3c7', 'English', '12c');
+(1, '12c6672ac911a253', 'Prueba', '11a'),
+(2, '12c6672ac9c45d68', 'Prueba1', '11a');
 
 -- --------------------------------------------------------
 

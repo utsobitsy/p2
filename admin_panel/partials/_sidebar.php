@@ -14,22 +14,22 @@
     
     <ul class="side-menu main-side-board">
         <li><a href="dashboard.php"><i class='bx bxs-dashboard'></i>Dashboard</a></li>
-        <li><a href="teacher.php"><i class='bx bxs-user-rectangle'></i>Teacher</a></li>
-        <li><a href="student.php"><i class='bx bxs-user-detail'></i>Student</a></li>
-        <li><a href="subjects.php"><i class='bx bx-book-bookmark'></i>Subjects</a></li>
-        <li><a href="attendence.php"><i class='bx bx-list-check'></i>Attendence</a></li>
-        <li><a href="noticeboard.php"><i class='bx bx-bookmark'></i>Notice Board</a></li>
-        <li><a href="timetable.php"><i class='bx bx-table'></i>Time Table</a></li>
-        <li><a href="syllabus.php"><i class='bx bx-file-blank'></i>Syllabus</a></li>
-        <li><a href="notes.php"><i class='bx bx-note'></i>Notes</a></li>
-        <li><a href="marks.php"><i class='bx bx-paste'></i>Marks</a></li>
-        <li><a href="settings.php"><i class='bx bx-cog'></i>Settings</a></li>
+        <li><a href="teacher.php"><i class='bx bxs-user-rectangle'></i>Profesor</a></li>
+        <li><a href="student.php"><i class='bx bxs-user-detail'></i>Estudiante</a></li>
+        <li><a href="subjects.php"><i class='bx bx-book-bookmark'></i>Materias</a></li>
+        <li><a href="attendence.php"><i class='bx bx-list-check'></i>Assitencia</a></li>
+        <li><a href="noticeboard.php"><i class='bx bx-bookmark'></i>Table de noticias</a></li>
+        <li><a href="timetable.php"><i class='bx bx-table'></i>Horarios</a></li>
+        <li><a href="syllabus.php"><i class='bx bx-file-blank'></i>Plan de estudio</a></li>
+        <li><a href="notes.php"><i class='bx bx-note'></i>Notas</a></li>
+        <li><a href="marks.php"><i class='bx bx-paste'></i>Definitivas / Semaforo</a></li>
+        <li><a href="settings.php"><i class='bx bx-cog'></i>Configuración</a></li>
     </ul>
     <ul class="side-menu">
         <li>
             <a class="logout" data-bs-toggle="modal" data-bs-target="#logout-modal">
                 <i class='bx bx-log-out-circle'></i>
-                Logout
+                Cerrar sesión
             </a>
         </li>
     </ul>
@@ -41,11 +41,11 @@
             <div class="modal-header">
             </div>
             <div class="modal-body">
-                <strong>Do you really want to logout?</strong>
+                <strong>Quieres cerrar sesión?</strong>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-danger" onclick="logout()">Logout</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Salir</button>
+                <button type="button" class="btn btn-danger" onclick="logout()">Cerrar sesión</button>
             </div>
         </div>
     </div>
